@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import Isim from './components/Isim';
+import Soyisim from './components/Soyisim';
+import TelefonNo from './components/TelefonNo';
+import KimlikNo from './components/KimlikNo';
+import { Container } from '@mui/material';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello React!!!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <h1>Enter Your Name</h1>
+     <Isim/>
+    
+     <h1>Enter Your Surname</h1>
+    <Soyisim/>
+    
+    <h1>Enter Your PhoneNumber</h1>
+    <TelefonNo/>
+    
+    <h1>Enter Your PersonalId</h1>
+    <KimlikNo/>
+  
+
+    </Container>
   );
-}
+};
 
 export default App;
+
